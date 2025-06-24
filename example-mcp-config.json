@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fal-recraft-v3": {
+      "command": "npx",
+      "args": ["-y", "https://github.com/PierrunoYT/fal-recraft-v3-mcp-server.git"],
+      "env": {
+        "FAL_KEY": "your_fal_api_key_here"
+      }
+    }
+  }
+}

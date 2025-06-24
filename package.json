@@ -1,0 +1,51 @@
+{
+  "name": "fal-recraft-v3-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for fal-ai/recraft/v3 - Advanced text-to-image generation model with superior design capabilities via fal.ai API",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "fal-recraft-v3-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "dev": "tsc --watch",
+    "start": "node build/index.js",
+    "test": "node test-server.js",
+    "get-path": "node get-path.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PierrunoYT/fal-recraft-v3-mcp-server.git"
+  },
+  "homepage": "https://github.com/PierrunoYT/fal-recraft-v3-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/PierrunoYT/fal-recraft-v3-mcp-server/issues"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "fal-ai",
+    "recraft-v3",
+    "image-generation",
+    "text-to-image",
+    "design",
+    "ai",
+    "typescript",
+    "model-context-protocol"
+  ],
+  "author": "PierrunoYT",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@fal-ai/client": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
